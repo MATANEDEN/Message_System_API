@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "da167609-cec9-462e-b800-992f7cd88e44",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "write_message",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "eden",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "matan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/write_message?sender=matan@gmail.com&receiver=eden@gmail.com&message=new_message&subject=new_subject",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"write_message"
+					],
+					"query": [
+						{
+							"key": "sender",
+							"value": "matan@gmail.com"
+						},
+						{
+							"key": "receiver",
+							"value": "eden@gmail.com"
+						},
+						{
+							"key": "message",
+							"value": "new_message"
+						},
+						{
+							"key": "subject",
+							"value": "new_subject"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_messages",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "eden",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "matan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/get_all_messages?recevier=eden@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get_all_messages"
+					],
+					"query": [
+						{
+							"key": "recevier",
+							"value": "eden@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_unread_messages",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "eden",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "matan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/get_all_unread?recevier=eden@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"get_all_unread"
+					],
+					"query": [
+						{
+							"key": "recevier",
+							"value": "eden@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read_message",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "eden",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "matan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/read_message?recevier=eden@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"read_message"
+					],
+					"query": [
+						{
+							"key": "recevier",
+							"value": "eden@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_message",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "eden",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "matan",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/delete_message?recevier=eden@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"delete_message"
+					],
+					"query": [
+						{
+							"key": "recevier",
+							"value": "eden@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

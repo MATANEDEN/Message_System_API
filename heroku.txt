@@ -1,0 +1,7 @@
+
+get_all_messages
+https://flaskmessageapp.herokuapp.com/get_all_messages?receiver=eden@gmail.com
+
+
+read_one_message
+https://flaskmessageapp.herokuapp.com/read_message?receiver=eden@gmail.com
